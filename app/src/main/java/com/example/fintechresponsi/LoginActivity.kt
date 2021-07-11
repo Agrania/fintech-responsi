@@ -11,7 +11,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         BtnLogin.setOnClickListener {
-            val intentLogin = Intent(this, RegisterActivity::class.java)
+            val intentLogin = Intent(this, HomeActivity::class.java)
             startActivity(intentLogin)
         }
 
@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         tvForgotPassword.setOnClickListener {
-            val intentPass = Intent(this, RegisterActivity::class.java)
+            val intentPass = Intent(this, RecoveryActivity::class.java)
             startActivity(intentPass)
         }
     }
